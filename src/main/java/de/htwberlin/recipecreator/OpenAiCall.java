@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,7 +20,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/openai")
 public class OpenAiCall {
 
-    private static final String API_KEY = "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";
+    String API_KEY = System.getenv("OPENAI_API_KEY");
+
+
     private static final String ENDPOINT = "https://api.openai.com/v1/chat/completions";
 
     @PostMapping("/chat")
