@@ -1,2 +1,2 @@
 # recipeCreator
-Eine App, die Rezepte erstellen kann mithilfe von OpenAI's gpt 3.5 turbo
+Eine App, die Rezepte erstellen kann mithilfe von OpenAI's gpt 3.5 turbo. Das Ziel ist eine App, bei der Nutzer die vorhanden Zutaten Zuhause zu KI-generierten Rezepte wandeln können. Zudem gibt es auch die Möglichkeit manuell Rezepte zu speichern mit Rezeptname, beschreibung(Anleitung) und Zutaten. 
