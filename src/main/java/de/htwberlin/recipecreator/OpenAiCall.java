@@ -11,16 +11,14 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "https://s0571584.github.io")
 @RestController
 @RequestMapping("/api/openai")
 public class OpenAiCall {
 
-    String API_KEY = System.getenv("OPENAI_API_KEY");
+    String API_KEY = "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";
 
 
     private static final String ENDPOINT = "https://api.openai.com/v1/chat/completions";
