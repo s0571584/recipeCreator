@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/openai")
 public class OpenAiCall {
 
-    String API_KEY = "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";
+    String API_KEY = System.getenv("OPENAI_API_KEY");
 
 
     private static final String ENDPOINT = "https://api.openai.com/v1/chat/completions";
