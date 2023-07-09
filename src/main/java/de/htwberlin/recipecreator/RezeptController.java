@@ -2,7 +2,7 @@ package de.htwberlin.recipecreator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
+@CrossOrigin(origins = "https://s0571584.github.io")
 @RestController
 @RequestMapping("/rezepte")
 public class RezeptController {
