@@ -12,7 +12,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "https://s0571584.github.io/webtech-frontend/")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/openai")
 public class OpenAiCall {
