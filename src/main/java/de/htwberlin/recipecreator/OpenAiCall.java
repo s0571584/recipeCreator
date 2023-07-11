@@ -1,5 +1,4 @@
 package de.htwberlin.recipecreator;
-
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -13,12 +12,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "https://s0571584.github.io")
+@CrossOrigin(origins = "https://s0571584.github.io/webtech-frontend/")
 @RestController
 @RequestMapping("/api/openai")
 public class OpenAiCall {
 
-    String API_KEY = System.getenv("OPENAI_API_KEY");
+    String API_KEY = "";
 
 
     private static final String ENDPOINT = "https://api.openai.com/v1/chat/completions";
