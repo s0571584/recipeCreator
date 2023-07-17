@@ -21,7 +21,6 @@ public class OpenAiCall {
     private String API_KEY;
 
 
-
     private static final String ENDPOINT = "https://api.openai.com/v1/chat/completions";
 
     @PostMapping("/chat")
